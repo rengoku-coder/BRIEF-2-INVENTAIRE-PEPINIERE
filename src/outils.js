@@ -9,7 +9,7 @@
 export function versNombre(texte) {
   const nettoye = String(texte ?? '').replace(/\s/g, '').replace(',', '.');
   if (nettoye === '') {
-    return NaN;
+    return NaN ;
   }
   const nombre = Number(nettoye);
   return Number.isFinite(nombre) ? nombre : NaN;
