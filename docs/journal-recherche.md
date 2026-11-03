@@ -4,6 +4,7 @@
 
 | Ce que je cherchais | Où | Ce que j'ai compris | Utilisé dans |
 | --- | --- | --- | --- |
-| ✏️ | | | |
-| ✏️ | | | |
-| ✏️ | | | |
+| comprendre les fonctions saisies dans outils.js| explication de mon voisin et de l'IA claude| `versNombre` convertit un texte saisi en nombre : elle supprime les espaces, remplace la virgule par un point, renvoie NaN si le texte est vide ou n'est pas un nombre. Elle convertit mais ne valide pas (entier, positif). `estDateValide` vérifie le format AAAA-MM-JJ avec un motif, puis construit une date et vérifie qu'on retrouve le même texte, ce qui détecte le 30 février.| `verifierPlant` dans `src/registre.js` |
+|  comprendre les fonctions saisies dans saisie.js |  explication de mon voisin et de l'IA claude | `demander(question)` affiche la question, attend la ligne tapée par l'utilisateur avec `await`, et renvoie le texte sans espaces autour (`trim`), ou `null` si la saisie est fermée. `fermerSaisie()` ferme la saisie une seule fois, avant de quitter | Le menu et toutes les questions dans `app.js` |
+| Async Iterator, Async function, await, export, et close() | le cours, mon voisin  |  Une fonction `async` renvoie une promesse. `await` attend le résultat avant de continuer, dans une fonction `async`. Un Async Iterator donne les valeurs une par une : chaque appel à `next()` renvoie une promesse d'un objet `{ value, done }`, avec `done` à vrai quand il n'y a plus rien. `export` rend une fonction utilisable depuis un autre fichier avec `import`. `close()` ferme proprement la saisie au clavier. | il est utilisé dans `src/saisie.js` (fourni), `src/stockage.js` et `app.js` |
+| Apprendre à lire un test rouge | Dans l'expérience du coach dans `src/outils.js`| J'ai remplacé `return NaN;` par `return 0;` : le test a échoué. `expected` est le résultat attendu et `actual` est le résultat obtenu. Un écart entre les deux me dit quelle fonction vérifier. J'ai annulé avec `git restore src/outils.js`. | j'ai fait `npm run test:outils` et ensuite `tout les tests ouils sont devenus vert`

@@ -4,7 +4,7 @@
 
 ## Contexte
 
-✏️ *En cinq à huit phrases : qui utilise l'outil (son métier, son geste professionnel), son besoin, ce qu'il saisit, ce que le programme lui affiche, ce que l'outil ne fait pas.*
+Mon outil est destiné à un technicien ou à un responsable de pépinière, qui suit les plants disponibles pour plusieurs producteurs avec peu de temps sur le terrain. Lors de mon stage en riziculture à Arrah, j’ai constaté qu’un technicien agricole ne passe qu’une fois par mois pour plus de cinquante producteurs, donc l’information doit être retrouvée vite, alors que les quantités par espèce sont aujourd’hui dispersées sur des étiquettes et des feuilles séparées. L’utilisateur saisit au clavier un code, un nom commun, un groupe botanique, une quantité de plants et une date de relevé. Le programme vérifie ces saisies, refuse les erreurs en expliquant pourquoi, puis enregistre l’inventaire. Il affiche la liste, les recherches, les tris et une synthèse avec le total, les quantités par groupe, l’espèce la plus abondante et les stocks faibles. Il ne devine pas le groupe botanique, ne remplace pas l’observation agronomique, et son seuil de 10 plants n’est pas une consigne de production.
 
 ## Prérequis et lancement
 
