@@ -34,18 +34,61 @@ export function trouverParId(plants, id) {
 // Règles : id obligatoire et unique · nomCommun obligatoire · groupe présent dans GROUPES
 // · nombrePlants nombre ENTIER positif ou nul · dateReleve réelle au format AAAA-MM-JJ.
 export function verifierPlant(saisie, plants) {
-  
+  const erreurs = [];
+
+  const codeVide = saisie.id === '';
+  if (codeVide) {
+    erreurs.push('Le code est obligatoire.');
+  } else {
+    const plantExistant = trouverParId(plants, saisie.id);
+    if (plantExistant !== undefined) {
+      erreurs.push(`Le code ${saisie.id} est déjà employé.`);
+    }
+  }
+
+  const nomVide = saisie.nomCommun === '';
+  if (nomVide) {
+    erreurs.push('Le nom commun est obligatoire.');
+  }
+
+  const groupeAutorise = GROUPES.includes(saisie.groupe);
+  if (!groupeAutorise) {
+    erreurs.push(`Le groupe doit être : ${GROUPES.join(' ou ')}.`);
+  }
+
+  const nombre = versNombre(saisie.nombrePlants);
+  const quantiteValide = Number.isInteger(nombre) && nombre >= 0;
+  if (!quantiteValide) {
+    erreurs.push('Le nombre de plants doit être un nombre entier positif ou nul.');
+  }
+
+  const dateValide = estDateValide(saisie.dateReleve);
+  if (!dateValide) {
+    erreurs.push('La date du relevé doit être une date réelle au format AAAA-MM-JJ.');
+  }
+
+  return erreurs;
     
-   
 }
 
 // Fabrique le plant à enregistrer à partir d'une saisie VALIDE : nombrePlants devient un nombre.
 export function creerPlant(saisie) {
-  
+   return {
+    id: saisie.id,
+    nomCommun: saisie.nomCommun,
+    groupe: saisie.groupe,
+    nombrePlants: versNombre(saisie.nombrePlants),
+    dateReleve: saisie.dateReleve,
+  };
 }
 
 // Ajoute la saisie à l'inventaire si elle est valide (verifierPlant, puis creerPlant).
 // Renvoie les erreurs : [] si le plant a été ajouté ; sinon les messages, et rien n'est ajouté.
 export function ajouterPlant(plants, saisie) {
-  ;
+  const erreurs = verifierPlant(saisie, plants);
+  if (erreurs.length > 0) {
+    return erreurs;
+  }
+  plants.push(creerPlant(saisie));
+  return [];
 }
