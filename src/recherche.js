@@ -4,12 +4,20 @@
 // Renvoie un NOUVEAU tableau avec les plants dont le nom commun CONTIENT le texte cherché,
 // sans tenir compte des majuscules : 'PALM' trouve 'palmier à huile'. Éventuellement vide.
 export function rechercherParNom(plants, texte) {
-  throw new Error('TODO : coder rechercherParNom dans src/recherche.js');
+    let resultat = [];
+
+    for (let i = 0; i < plants.length; i++) {
+        let nom = plants[i].nomCommun.toLowerCase();
+        let recherche = texte.toLowerCase();
+        if (nom.includes(recherche)) {
+            resultat.push(plants[i]);
+        }
+    } return resultat;
 }
 
 // Renvoie un NOUVEAU tableau avec les plants de ce groupe botanique (éventuellement vide).
 export function filtrerParGroupe(plants, groupe) {
-  throw new Error('TODO : coder filtrerParGroupe dans src/recherche.js');
+   
 }
 
 // Renvoie une COPIE triée par nombre de plants croissant, avec un comparateur numérique.
