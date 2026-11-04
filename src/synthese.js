@@ -32,15 +32,19 @@ export function syntheseParGroupe(plants) {
   synthese[groupe].especes = synthese[groupe].especes + 1;
 
   synthese[groupe].plants = synthese[groupe].plants + plants[i].nombrePlants;
-    }
-
-    return synthese;
+    } return synthese;
 }
 
 // Renvoie un NOUVEAU tableau avec les plants dont le nombre est INFÉRIEUR OU ÉGAL au seuil.
 // Exemple : stocksFaibles(donnees, 10) → N09 (8 plants) et N10 (10 plants)
 export function stocksFaibles(plants, seuil) {
-  throw new Error('TODO : coder stocksFaibles dans src/synthese.js');
+  let resultat = [];
+
+    for (let i = 0; i < plants.length; i++) {
+        if (plants[i].nombrePlants <= seuil) {
+            resultat.push(plants[i]);
+        }
+    } return resultat;
 }
 
 // Renvoie le plant (la ligne d'inventaire) qui a le plus grand nombre de plants,
