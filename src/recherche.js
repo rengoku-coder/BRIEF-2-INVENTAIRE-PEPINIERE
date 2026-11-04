@@ -28,5 +28,9 @@ export function filtrerParGroupe(plants, groupe) {
 // Renvoie une COPIE triée par nombre de plants croissant, avec un comparateur numérique.
 // Deux plants de même nombre gardent leur ordre d'origine. Le tableau reçu ne doit pas changer d'ordre.
 export function trierParNombrePlants(plants) {
-  throw new Error('TODO : coder trierParNombrePlants dans src/recherche.js');
+    let resultat = plants.slice();
+    resultat.sort(function(a, b) {
+        return a.nombrePlants - b.nombrePlants;
+    });
+    return resultat;
 }
