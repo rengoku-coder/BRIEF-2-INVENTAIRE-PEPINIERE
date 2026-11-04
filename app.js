@@ -12,8 +12,19 @@ const FICHIER_DONNEES = 'donnees/plants.json';
 
 async function main() {
   ouvrirSaisie();
-  console.log("À compléter : écrivez le menu dans app.js (fiches/3-ajouter-lister.md).");
-  fermerSaisie();
+  
+  console.log("==================================================");
+  console.log("   INVENTAIRE DE LA PÉPINIÈRE");
+  console.log("   Pépinière pédagogique");
+  console.log("==================================================");
+
+  let plants = await chargerJson(FICHIER_DONNEES);
+
+  console.log(plants.length + " espèce(s) chargée(s) depuis " + FICHIER_DONNEES + ".");
+
+fermerSaisie();
 }
+  
+
 
 main();
