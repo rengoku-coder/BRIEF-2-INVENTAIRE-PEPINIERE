@@ -7,14 +7,34 @@ export const SEUIL_STOCK_FAIBLE = 10;
 
 // Renvoie le nombre total de plants. Liste vide : 0.
 export function totalPlants(plants) {
-  throw new Error('TODO : coder totalPlants dans src/synthese.js');
+
+    let total = 0;
+    for (let i = 0; i < plants.length; i++) {
+        total = total + plants[i].nombrePlants;
+    } return total;
+
 }
 
 // Renvoie un objet : pour chaque groupe, le nombre d'espèces (de lignes) et le total de plants.
 // Exemple : { angiosperme: { especes: 8, plants: 222 }, gymnosperme: { especes: 2, plants: 18 } }
 // Liste vide : {} (un objet vide).
 export function syntheseParGroupe(plants) {
-  throw new Error('TODO : coder syntheseParGroupe dans src/synthese.js');
+  let synthese = {};
+
+    for (let i = 0; i < plants.length; i++) {
+        let groupe = plants[i].groupe;
+    if (synthese[groupe] === undefined) {
+        synthese[groupe] = {
+          especes: 0,
+          plants: 0 };
+        }
+
+  synthese[groupe].especes = synthese[groupe].especes + 1;
+
+  synthese[groupe].plants = synthese[groupe].plants + plants[i].nombrePlants;
+    }
+
+    return synthese;
 }
 
 // Renvoie un NOUVEAU tableau avec les plants dont le nombre est INFÉRIEUR OU ÉGAL au seuil.
