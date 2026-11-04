@@ -18,13 +18,16 @@ async function main() {
   console.log("   Pépinière pédagogique");
   console.log("==================================================");
 
-  let plants = await chargerJson(FICHIER_DONNEES);
+  let plants = [];
 
-  console.log(plants.length + " espèce(s) chargée(s) depuis " + FICHIER_DONNEES + ".");
-
-fermerSaisie();
+  try {
+    plants = await chargerJson(FICHIER_DONNEES);
+    console.log(plants.length + " espèce(s) chargée(s) depuis " + FICHIER_DONNEES + ".");
+  } catch (erreur) {
+    console.log("Impossible de lire " + FICHIER_DONNEES + " : " + erreur.message + ". L'inventaire démarre vide.");
+  } finally {
+    fermerSaisie();
+  }
 }
   
-
-
 main();
