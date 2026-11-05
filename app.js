@@ -51,7 +51,22 @@ let plants = [];
       console.log("Au revoir !");
 
     } else if (choix === "1") {
-      console.log("Ajouter un plant");
+          const id = await demander("Code (ex. N11) : ");
+    const nomCommun = await demander("Nom commun : ");
+    const groupe = await demander("Groupe (angiosperme ou gymnosperme) : ");
+    const nombrePlants = await demander("Nombre de plants : ");
+    const dateReleve = await demander("Date du relevé (AAAA-MM-JJ) : ");
+
+    const saisie = { id, nomCommun, groupe, nombrePlants, dateReleve };
+    const erreurs = ajouterPlant(plants, saisie);
+
+    if (erreurs.length === 0) {
+      await enregistrerJson(FICHIER_DONNEES, plants);
+      console.log("Plant ajouté et enregistré.");
+    } else {
+      console.log("Plant non ajouté :");
+      console.log(erreurs.join("\n"));
+    }
 
     } else if (choix === "2") {
       console.log("--- Inventaire (" + plants.length + " espèce(s)) ---");
