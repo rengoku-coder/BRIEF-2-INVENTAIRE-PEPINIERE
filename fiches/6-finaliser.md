@@ -20,7 +20,7 @@ Vérifiez sur un autre poste, en suivant votre README, à côté de votre projet
 
 ```powershell
 cd ..
-git clone https://github.com/VOTRE-COMPTE/brief-2-inventaire-pepiniere.git test-livraison
+git clone https://github.com/rengoku-coder/BRIEF-2-INVENTAIRE-PEPINIERE.git
 cd test-livraison
 node app.js
 npm test
@@ -33,4 +33,4 @@ Supprimez ensuite `test-livraison`. Avant l'heure : `git status` propre, `git pu
 1. **Démonstration (3 min)** : inventaire ; recherche de `N09` puis `N99` ; recherche par nom et par groupe ; tri ; synthèse ; une espèce saisie en direct puis la synthèse à nouveau ; une saisie refusée.
 2. **Explication (4 min)** : une fonction choisie par le jury, ligne par ligne.
 3. **Modification guidée (4 min)**, par exemple : tri décroissant, nombre moyen de plants par groupe, refuser plus de 10 000 plants, stocks faibles avec un autre seuil.
-4. **Questions (3 min)** : votre poste et Git (`git add`, `git commit`, `git push`) ; votre raisonnement (entrées, sortie, inventaire vide) ; vos recherches (journal) ; l'agronomie (ce qui distingue angiospermes et gymnospermes, un organe végétatif et un organe reproducteur, pourquoi le seuil de 10 plants n'est pas une consigne de production).
+4. **Questions (3 min)** : votre poste et Git (`git add`, `git commit`, `git push`) ; votre raisonnement (entrées, sortie, inventaire vide) ; vos recherches (journal) ; l'agronomie (ce qui distingue angiospermes et gymnospermes, un organe végétatif et un organe reproducteur, pourquoi le seuil de 10 plants n'est pas une consigne de production) .
