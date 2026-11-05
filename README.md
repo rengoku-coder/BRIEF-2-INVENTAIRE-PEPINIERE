@@ -1,6 +1,10 @@
 # Inventaire de la pépinière
 
-> Projet individuel du SAS DFS, brief 2 (sujet : [SUJET.md](SUJET.md)). Remplacez chaque ✏️ par votre texte, puis supprimez cette ligne.
+> Projet individuel du SAS DFS, brief 2 (sujet : [SUJET.md](SUJET.md)). 
+
+Brief 2 : Développement d'une application JavaScript de gestion d'inventaire d'une pépinière.
+Ce projet consiste à concevoir une application en ligne de commande permettant d'enregistrer, de rechercher, de trier et de suivre les quantités de plants disponibles dans une pépinière.
+Le projet est réalisé individuellement dans le cadre de la formation Digital Farming School.
 
 ## Contexte
 
@@ -11,7 +15,7 @@ Mon outil est destiné à un technicien ou à un responsable de pépinière, qui
 - Node.js 20 ou plus récent, Git ; aucune bibliothèque à installer.
 
 ```bash
-git clone https://github.com/VOTRE-COMPTE/brief-2-inventaire-pepiniere.git
+git clone https://github.com/rengoku-coder/BRIEF-2-INVENTAIRE-PEPINIERE.git
 cd brief-2-inventaire-pepiniere
 node app.js
 npm test
@@ -45,4 +49,5 @@ Les données sont stockées dans le fichier donnees/plants.json et contiennent i
 
 ## Auteur
 
-✏️ *Prénom NOM, compte GitHub. Entraide : avec qui, sur quoi.*
+ *TOURE SITAFA , rengoku-coder. Entraide : J'ai bénéficié de l'aide de mes compagnons du SAS (Kamagaté Abdallah, Konaté Kaba, LIADE MARC HENOC) de mon coach à qui j'ai posé des questions quand je ne comprenait pas des instructions  et d'outils d'intelligence artificielle, notamment Claude et ChatGPT, pour mieux comprendre certaines fonctions JavaScript et les outils fournis dans le projet.
+J'ai notamment travaillé sur la compréhension de versNombre, estDateValide, demander, async, await, export et close().

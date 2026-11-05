@@ -9,9 +9,9 @@
 | Fiche 3 : ajouter et lister ; choix 1 et 2 ; erreurs | Mardi 03-11-2026 |Mercredi 04-11-2026 |commit (Etape:Le menu ; ajouter et lister ; choix 1 et 2 (ajout des fonctions verifierPlant, creerPlant, ajouterPlant) et d'un blocage résolu dans taches.md) |
 | Fiche 4 : rechercher et trier ; choix 3 et 4 | Mardi 03-11-2026 |Mercredi 04-11-2026 |commit (ajout de la  fonction (especeLaPlusAbondante) de la fiches/5-synthese) |
 | Fiche 5 : synthèse ; choix 5 |Du mardi 03-11-2026 au Mercredi 04-11-2026| Mercredi 04-11-2026|commit (ajout de la  fonction (especeLaPlusAbondante) de la fiches/5-synthese) |
-| Tests par un camarade ; mes propres tests | Mercredi 04-11-2026 |Jeudi 05-11-2026 | |
-| Fiche agronomique ; README ; documents |Mercredi 04-11-2026| | |
-| Dépôt cloné et lancé ailleurs ; démonstration répétée | Mercredi 04-11-2026| | |
+| Tests par un camarade ; mes propres tests | Mercredi 04-11-2026 |Jeudi 05-11-2026 |tout les tests macrhe sauf pour les tests bonus |
+| Fiche agronomique ; README ; documents |Mercredi 04-11-2026|Jeudi 05-11-2026 | |
+| Dépôt cloné et lancé ailleurs ; démonstration répétée | Mercredi 04-11-2026| Jeudi 05-11-2026|Résultats de node app.js et npm test sur un autre poste. |
 | Bonus | Jeudi 05-11-2026| | |
 
 **Blocages** (le message exact, ce que j'ai essayé, la solution) : 
