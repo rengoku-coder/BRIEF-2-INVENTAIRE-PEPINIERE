@@ -13,21 +13,65 @@ const FICHIER_DONNEES = 'donnees/plants.json';
 async function main() {
   ouvrirSaisie();
   
-  console.log("==================================================");
-  console.log("   INVENTAIRE DE LA PÉPINIÈRE");
-  console.log("   Pépinière pédagogique");
-  console.log("==================================================");
-
-  let plants = [];
+let plants = [];
 
   try {
+    console.log("==================================================");
+    console.log("   INVENTAIRE DE LA PÉPINIÈRE");
+    console.log("   Pépinière pédagogique");
+    console.log("==================================================");
+
     plants = await chargerJson(FICHIER_DONNEES);
+
     console.log(plants.length + " espèce(s) chargée(s) depuis " + FICHIER_DONNEES + ".");
+
   } catch (erreur) {
     console.log("Impossible de lire " + FICHIER_DONNEES + " : " + erreur.message + ". L'inventaire démarre vide.");
-  } finally {
-    fermerSaisie();
   }
+
+  let choix = "";
+
+  while (choix !== "0") {
+
+    console.log("--------------------- MENU ---------------------");
+    console.log("1. Ajouter un plant");
+    console.log("2. Lister l'inventaire");
+    console.log("3. Rechercher (code, nom, groupe)");
+    console.log("4. Trier (nombre de plants)");
+    console.log("5. Synthèse des quantités");
+    console.log("0. Quitter");
+
+    choix = await demander("Votre choix : ");
+
+    if (choix === null) {
+      break;
+    }
+
+    if (choix === "0") {
+      console.log("Au revoir !");
+
+    } else if (choix === "1") {
+      console.log("Ajouter un plant");
+
+    } else if (choix === "2") {
+      console.log("--- Inventaire (" + plants.length + " espèce(s)) ---");
+      console.log(listerPlants(plants));
+
+    } else if (choix === "3") {
+      console.log("Rechercher");
+
+    } else if (choix === "4") {
+      console.log("Trier");
+
+    } else if (choix === "5") {
+      console.log("Synthèse des quantités");
+
+    } else {
+      console.log("Choix inconnu : « " + choix + " ». Tapez un chiffre du menu.");
+    }
+  }
+
+  fermerSaisie();
 }
   
 main();
