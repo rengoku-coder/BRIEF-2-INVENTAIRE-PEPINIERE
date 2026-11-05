@@ -73,7 +73,30 @@ let plants = [];
       console.log(listerPlants(plants));
 
     } else if (choix === "3") {
-      console.log("Rechercher");
+          const critere = await demander("Rechercher par : 1. Code  2. Nom  3. Groupe : ");
+
+    if (critere === "1") {
+      const id = await demander("Code : ");
+      const plant = trouverParId(plants, id);
+      if (plant === undefined) {
+        console.log("Aucun plant avec ce code.");
+      } else {
+        console.log(formaterPlant(plant));
+      }
+
+    } else if (critere === "2") {
+      const texte = await demander("Nom (ou début du nom) : ");
+      const resultats = rechercherParNom(plants, texte);
+      console.log(listerPlants(resultats));
+
+    } else if (critere === "3") {
+      const groupe = await demander("Groupe (angiosperme ou gymnosperme) : ");
+      const resultats = filtrerParGroupe(plants, groupe);
+      console.log(listerPlants(resultats));
+
+    } else {
+      console.log("Critère inconnu.");
+    }
 
     } else if (choix === "4") {
       console.log("Trier");
