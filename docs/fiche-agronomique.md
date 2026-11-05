@@ -9,7 +9,7 @@
 | Espèce de l'inventaire | Groupe | Critère de la fiche botanique | Observé (ou pas pu l'observer) |
 | --- | --- | --- | --- |
 | cacao | angiosperme | graine enfermés dans le fruit ici la cabosse| fleurs, cabosses, cauliflorie (fleurs et fruits directement sur le tronc et les grosses branches) |
-| ✏️ | gymnosperme | | |
+| pas d'espèce observé | gymnosperme | plante sans vraie fleur; ses graines sont nues, souvent portées par des cônes (pin,cycas)|pas pu l'observer |
 
 **Le seuil de 10 plants dit-il qu'il faut produire davantage d'une espèce ?** 
 Le seuil de 10 plants est un repère purement pédagogique et quantitatif pour le suivi logistique de l'inventaire informatique (stock faible). Il ne constitue en aucun cas une recommandation technique ou agronomique de production.
