@@ -75,5 +75,12 @@
     "groupe": "angiosperme",
     "nombrePlants": 17,
     "dateReleve": "2026-10-29"
+  },
+  {
+    "id": "N12",
+    "nomCommun": "hévéa",
+    "groupe": "angiosperme",
+    "nombrePlants": 5,
+    "dateReleve": "2026-10-30"
   }
 ]

@@ -103,10 +103,32 @@ let plants = [];
     console.log(listerPlants(plantsTries));
 
     } else if (choix === "5") {
-      console.log("Synthèse des quantités");
+    const total = totalPlants(plants);
+    console.log("Total de plants : " + total);
+
+    const parGroupe = syntheseParGroupe(plants);
+    console.log("--- Par groupe ---");
+    for (const groupe in parGroupe) {
+    console.log(groupe + " : " + parGroupe[groupe].especes + " espèce(s), " + parGroupe[groupe].plants + " plants");
+    }
+
+    const abondant = especeLaPlusAbondante(plants);
+    if (abondant === null) {
+    console.log("Aucune espèce enregistrée.");
+    } else {
+    console.log("Espèce la plus abondante : " + abondant.nomCommun + " (" + abondant.nombrePlants + " plants)");
+    }
+
+    const faibles = stocksFaibles(plants, SEUIL_STOCK_FAIBLE);
+    console.log("--- Stocks faibles (" + SEUIL_STOCK_FAIBLE + " plants ou moins) ---");
+    if (faibles.length === 0) {
+    console.log("Aucun stock faible.");
+    } else {
+    console.log(listerPlants(faibles));
+    }
 
     } else {
-      console.log("Choix inconnu : « " + choix + " ». Tapez un chiffre du menu.");
+    console.log("Choix inconnu : « " + choix + " ». Tapez un chiffre du menu.");
     }
   }
 
