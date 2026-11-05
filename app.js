@@ -99,7 +99,8 @@ let plants = [];
     }
 
     } else if (choix === "4") {
-      console.log("Trier");
+         const plantsTries = trierParNombrePlants(plants);
+    console.log(listerPlants(plantsTries));
 
     } else if (choix === "5") {
       console.log("Synthèse des quantités");
