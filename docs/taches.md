@@ -4,12 +4,12 @@
 
 | Tâche | Prévu | Fait le | Preuve |
 | --- | --- | --- | --- |
-| Poste et dépôt prêts ; besoin compris ; documents commencés | Du Lundi 02-11-2026 au Mardi 03-11-2026 | | |
-| Fiche 2 : lire et écrire le JSON | Mardi 03-11-2026 | | |
-| Fiche 3 : ajouter et lister ; choix 1 et 2 ; erreurs | Mardi 03-11-2026 | | |
-| Fiche 4 : rechercher et trier ; choix 3 et 4 | Mardi 03-11-2026 | | |
-| Fiche 5 : synthèse ; choix 5 |Du mardi 03-11-2026 au Mercredi 04-11-2026| | |
-| Tests par un camarade ; mes propres tests | Mercredi 04-11-2026 | | |
+| Poste et dépôt prêts ; besoin compris ; documents commencés | Du Lundi 02-11-2026 au Mardi 03-11-2026 | Lundi 02-11-2026|commit (Départ du brief 2 : kit fourni) |
+| Fiche 2 : lire et écrire le JSON | Mardi 03-11-2026 |Mardi 03-11-2026 |commit (ajout de la lecture et l'écriture des données dans un fichier JSON (fiches/2-donnees-json.md) dans stockage.js : chagerJson(chemin) et enregistrerJson(chemin, enregistrements))|
+| Fiche 3 : ajouter et lister ; choix 1 et 2 ; erreurs | Mardi 03-11-2026 |Mercredi 04-11-2026 |commit (Etape:Le menu ; ajouter et lister ; choix 1 et 2 (ajout des fonctions verifierPlant, creerPlant, ajouterPlant) et d'un blocage résolu dans taches.md) |
+| Fiche 4 : rechercher et trier ; choix 3 et 4 | Mardi 03-11-2026 |Mercredi 04-11-2026 |commit (ajout de la  fonction (especeLaPlusAbondante) de la fiches/5-synthese) |
+| Fiche 5 : synthèse ; choix 5 |Du mardi 03-11-2026 au Mercredi 04-11-2026| Mercredi 04-11-2026|commit (ajout de la  fonction (especeLaPlusAbondante) de la fiches/5-synthese) |
+| Tests par un camarade ; mes propres tests | Mercredi 04-11-2026 |Jeudi 05-11-2026 | |
 | Fiche agronomique ; README ; documents |Mercredi 04-11-2026| | |
 | Dépôt cloné et lancé ailleurs ; démonstration répétée | Mercredi 04-11-2026| | |
 | Bonus | Jeudi 05-11-2026| | |

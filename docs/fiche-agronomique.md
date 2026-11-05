@@ -11,6 +11,7 @@
 | cacao | angiosperme | graine enfermés dans le fruit ici la cabosse| fleurs, cabosses, cauliflorie (fleurs et fruits directement sur le tronc et les grosses branches) |
 | ✏️ | gymnosperme | | |
 
-**Le seuil de 10 plants dit-il qu'il faut produire davantage d'une espèce ?** ✏️
+**Le seuil de 10 plants dit-il qu'il faut produire davantage d'une espèce ?** 
+Le seuil de 10 plants est un repère purement pédagogique et quantitatif pour le suivi logistique de l'inventaire informatique (stock faible). Il ne constitue en aucun cas une recommandation technique ou agronomique de production.
 
-Sources et origine des observations : ✏️ · Relu par le coach le : ✏️
+Sources et origine des observations :ce sont les  relevés de terrain effectués sur la ferme connectée, lors de la viste de la ferme connectée dans le cadre du coaching en agronomie. · Relu par le coach le : 24-10-2026

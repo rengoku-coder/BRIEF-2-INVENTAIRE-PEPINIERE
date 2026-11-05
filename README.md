@@ -21,20 +21,19 @@ Sous PowerShell, si `npm` est bloqué : `npm.cmd test`.
 
 ## Fonctionnalités
 
-✏️ *Cochez seulement ce qui marche : `- [x]`.*
 
-- [ ] Données lues et enregistrées dans `donnees/plants.json`
-- [ ] Ajouter un plant, saisies invalides refusées sans arrêter le programme
-- [ ] Lister l'inventaire, message si l'inventaire est vide
-- [ ] Rechercher par code ou par nom ; filtrer par groupe botanique
-- [ ] Trier par nombre de plants
-- [ ] Synthèse : stock total, espèces et plants par groupe, espèce la plus abondante, stocks faibles (≤ 10 plants)
+- [X] Données lues et enregistrées dans `donnees/plants.json`
+- [X] Ajouter un plant, saisies invalides refusées sans arrêter le programme
+- [X] Lister l'inventaire, message si l'inventaire est vide
+- [X] Rechercher par code ou par nom ; filtrer par groupe botanique
+- [X] Trier par nombre de plants
+- [X] Synthèse : stock total, espèces et plants par groupe, espèce la plus abondante, stocks faibles (≤ 10 plants)
 - [ ] Bonus : supprimer et modifier un plant (choix 6 et 7)
 - [ ] Bonus : tri décroissant, groupe le plus fourni
 
 ## Données
 
-✏️ *Le fichier, le nombre de lignes, les champs (voir [docs/dictionnaire-donnees.md](docs/dictionnaire-donnees.md)), l'unité. Rappelez qu'elles sont fictives et que les groupes sont fournis par le coach.*
+Les données sont stockées dans le fichier donnees/plants.json et contiennent initialement 10 lignes de plants fictifs. Chaque ligne comprend 5 champs obligatoires : un code unique (id), un nom commun (nomCommun), un groupe botanique validé par le coach (groupe), un nombre de plants entier positif (nombrePlants), et une date de relevé au format AAAA-MM-JJ (dateReleve).
 
 ## Limites
 
