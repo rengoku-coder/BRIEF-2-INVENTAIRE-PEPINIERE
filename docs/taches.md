@@ -10,9 +10,9 @@
 | Fiche 4 : rechercher et trier ; choix 3 et 4 | Mardi 03-11-2026 |Mercredi 04-11-2026 |commit (ajout de la  fonction (especeLaPlusAbondante) de la fiches/5-synthese) |
 | Fiche 5 : synthèse ; choix 5 |Du mardi 03-11-2026 au Mercredi 04-11-2026| Mercredi 04-11-2026|commit (ajout de la  fonction (especeLaPlusAbondante) de la fiches/5-synthese) |
 | Tests par un camarade ; mes propres tests | Mercredi 04-11-2026 |Jeudi 05-11-2026 |tout les tests macrhe sauf pour les tests bonus |
-| Fiche agronomique ; README ; documents |Mercredi 04-11-2026|Jeudi 05-11-2026 | |
-| Dépôt cloné et lancé ailleurs ; démonstration répétée | Mercredi 04-11-2026| Jeudi 05-11-2026|Résultats de node app.js et npm test sur un autre poste. |
-| Bonus | Jeudi 05-11-2026| | |
+| Fiche agronomique ; README ; documents |Mercredi 04-11-2026|Jeudi 05-11-2026 | commit (ajouts de compléments d'informormations sur mon README, la fiche agronomique, la fiche individuelle, releve-tests, taches.md)|
+| Dépôt cloné et lancé ailleurs ; démonstration répétée | Mercredi 04-11-2026| Jeudi 05-11-2026| voir docs relevé de tests.md |
+| Bonus | Jeudi 05-11-2026|Jeudi 05-11-2026 | je n'ai pas pu faire le bonus (pas de preuve)|
 
 **Blocages** (le message exact, ce que j'ai essayé, la solution) : 
 "error: remote origin already exists." Quand j'ai tapé `git remote add origin`, Git m'a dit que `origin` existait déjà. Je voulais ajouter une adresse GitHub qui était déjà enregistrée. Solution : j'ai vérifié avec `git remote -v`, puis j'ai corrigé l'adresse avec `git remote set-url origin <adresse>`.

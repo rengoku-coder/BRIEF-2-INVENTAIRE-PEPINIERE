@@ -41,7 +41,10 @@ Les données sont stockées dans le fichier donnees/plants.json et contiennent i
 
 ## Limites
 
-✏️ *Au moins trois. Par exemple : le seuil de 10 plants est un repère de suivi, pas une recommandation de production.*
+Le seuil de 10 plants est un repère pédagogique de suivi, non une recommandation de production.
+Les 10 espèces et 240 plants correspondent au jeu de données de démonstration de l'application.
+L'application facilite le suivi des stocks, mais ne remplace pas l'expertise du technicien agricole.
+L'historique, les alertes et la gestion multi-pépinières sont des perspectives d'évolution.
 
 ## Documents
 
